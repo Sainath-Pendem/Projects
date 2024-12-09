@@ -107,7 +107,8 @@ while True:
                     break
                 else:
                     turn = 'player1'
-replay()
+    if not replay():
+        break
             
                     
     
