@@ -1,3 +1,12 @@
+Tic-Tac-Toe is a simple yet classic two-player game that involves strategy, planning, and quick thinking.
+It is played on a 3x3 grid where players take turns marking the spaces with their respective symbols, typically "X" and "O". 
+The objective of the game is to be the first player to get three of their symbols in a row, either horizontally, vertically, or diagonally.
+Gameplay:
+The game is played on a 3x3 grid.
+Players alternate turns, placing their symbol (X or O) in an empty cell.
+The goal is to align three of their symbols consecutively in a row, column, or diagonal.
+
+
 from IPython.display import clear_output 
 
 def display_board(board):
