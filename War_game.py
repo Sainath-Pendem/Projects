@@ -1,3 +1,15 @@
+The War Card Game is a simple yet engaging card game that pits two players against each other in a battle of chance and strategy. 
+The game uses a standard 52-card deck and is suitable for players of all ages. 
+It is a perfect blend of luck and tactical decision-making, making it a timeless favorite.
+Gameplay:
+Players simultaneously flip the top card of their stack to reveal their card.
+The player with the higher-ranking card wins the battle and takes both cards, placing them at the bottom of their stack.
+If the cards are of equal rank, a "war" is declared:
+Each player places three cards face down and one card face up.
+The player with the higher-ranking face-up card wins all the cards.
+If the face-up cards are again of equal rank, the war process repeats
+
+
 import random
 suits={'Hearts','Clubs','Diamonds','Spades'}
 ranks={'Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Jack','Queen','King','Ace'}
