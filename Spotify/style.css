@@ -1,0 +1,252 @@
+body {
+    background-color: #030303;
+    overflow-x: hidden;
+
+}
+
+.top {
+    height: 60px;
+    max-width: 100%;
+}
+
+.home {
+    border-style: hidden;
+    background-color: rgb(96, 95, 95);
+    padding: 3px;
+}
+
+.home img {
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+}
+
+#search {
+    height: 30px;
+    width: 300px;
+    border-radius: 30px;
+    padding: 3px;
+    color: #fff;
+    background-color: #222;
+    margin: 10px;
+}
+
+#search:hover {
+    font-weight: bold;
+}
+
+.Hii {
+    list-style-type: none;
+    gap: 10px;
+}
+
+.notify {
+    background-color: white;
+    border-style: hidden;
+
+}
+
+.notify img {
+    height: 20px;
+    width: 20px;
+}
+
+.login {
+    border: 2px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: rgb(77, 75, 75);
+    color: white;
+    padding: 12px;
+
+}
+
+.login:hover {
+    font-size: 20px;
+}
+
+.signup:hover {
+    font-size: 20px;
+}
+
+.left {
+    height: 700px;
+    width: 30vw;
+    padding: 16px;
+    background-color: #222;
+    /* Same as rgb(34, 34, 34), but cleaner */
+    color: #fff;
+    background-image: url(pimusic.jpg);
+}
+
+.list {
+    border: 2px solid rgb(250, 250, 250);
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.list img {
+    height: 20px;
+}
+
+.songs1 {
+    margin-right: 25px;
+    border: 2px solid black;
+    border-style: hidden;
+    border-radius: 10px;
+}
+
+.splay {
+    background-color: transparent;
+    border: 2px solid #2d2f2d;
+    /* Optional: adds a visible border */
+    border-style: hidden;
+    color: #f1f5f1;
+    /* Text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.splay:hover {
+    font-weight: bold;
+    color: rgb(247, 242, 242);
+}
+
+.pic img {
+    height: 300px;
+    width: 300px;
+}
+
+.lib {
+    margin: 11px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create {
+    border: 1px solid rgb(104, 103, 103);
+    border-radius: 20px;
+    background-color: rgb(99, 97, 97);
+    color: rgb(251, 247, 247);
+    padding: 5px;
+}
+.right {
+    height: 700px;
+    width: 70vw;
+    padding: 16px;
+    color: white;
+    margin-left: 5px;
+    background-color: rgb(34, 34, 34);
+    position: relative;
+    background-image: url(pic.jpg);
+}
+
+.playback {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(235, 237, 235);
+    padding: 10px;
+    color: black;
+}
+
+.card {
+    border: 2px solid black;
+    border-style: hidden;
+    background-color: rgb(84, 84, 84);
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5%;
+    position: relative;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5%;
+}
+
+.play {
+    opacity: 0;
+    position: absolute;
+    top: 180px;
+    right: 10px;
+    transition: all 1s ease-out;
+}
+
+.card:hover .play {
+    opacity: 1;
+    top: 170px;
+}
+
+.play img {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(4, 121, 4);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.artist {
+    margin: 5px;
+    padding: 10px;
+}
+
+.art {
+    height: fit-content;
+    width: fit-content;
+    border-style: hidden;
+    border-radius: 2px;
+    background-color: rgb(83, 82, 82);
+    color: white;
+    padding: 10px;
+    margin: 3px;
+}
+
+.art img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.song-alb {
+    height: fit-content;
+    width: fit-content;
+    border-style: hidden;
+    background-color: rgb(84, 83, 83);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.song-alb img {
+    height: 200px;
+    width: 200px;
+}
+
+#progess {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.playback {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 100vw;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+#sname {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+}

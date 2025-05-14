@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Telugu Songs</title>
+</head>
+
+<body>
+    <h1>🎵 Popular Telugu Songs on Spotify</h1>
+    <ul>
+        <li><a href="https://masstamilan.dev/1888/buttabomma-mp3-song" target="_blank">Buttabomma – Armaan Malik</a>
+        </li>
+        <li><a href="https://naasongs.com.co/rx-100-2018-songs.html" target="_blank">Pillaa Raa – Anurag Kulkarni</a>
+        </li>
+        <li><a href="https://naasongs.com.co/ala-vaikuntapuramulo-2020-songs-download1g.html" target="_blank">Ramuloo
+                Ramulaa – Anurag Kulkarni & Mangli</a></li>
+        <li><a href="https://naasongs.com.co/kurchi-madathapetti-song-guntur-kaaram.html" target="_blank">Kurchi
+                Madathapetti – Thaman S, Sri Krishna & Sahithi Chaganti</a></li>
+        <li><a href="https://music.apple.com/us/song/gopikamma/947288142" target="_blank">Gopikamma – K. S. Chithra</a>
+        </li>
+    </ul>
+
+    <script>
+        fetch('http://127.0.0.1:3000/songs/')
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('song-list');
+                data.forEach(song => {
+                    const listItem = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = song.url;
+                    link.textContent = song.title;
+                    link.target = '_blank'; // Opens the link in a new tab
+                    listItem.appendChild(link);
+                    list.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching songs:', error));
+    </script>
+</body>
+
+</html>
